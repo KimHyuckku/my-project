@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vinyl_house", "vinyl_house.vcxproj", "{47DC43C8-459D-4CE3-BB21-B19D5AB4D35F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47DC43C8-459D-4CE3-BB21-B19D5AB4D35F}.Debug|x64.ActiveCfg = Debug|x64
+		{47DC43C8-459D-4CE3-BB21-B19D5AB4D35F}.Debug|x64.Build.0 = Debug|x64
+		{47DC43C8-459D-4CE3-BB21-B19D5AB4D35F}.Debug|x86.ActiveCfg = Debug|Win32
+		{47DC43C8-459D-4CE3-BB21-B19D5AB4D35F}.Debug|x86.Build.0 = Debug|Win32
+		{47DC43C8-459D-4CE3-BB21-B19D5AB4D35F}.Release|x64.ActiveCfg = Release|x64
+		{47DC43C8-459D-4CE3-BB21-B19D5AB4D35F}.Release|x64.Build.0 = Release|x64
+		{47DC43C8-459D-4CE3-BB21-B19D5AB4D35F}.Release|x86.ActiveCfg = Release|Win32
+		{47DC43C8-459D-4CE3-BB21-B19D5AB4D35F}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CC766075-C917-4499-B7DC-94482DDACBDE}
+	EndGlobalSection
+EndGlobal
