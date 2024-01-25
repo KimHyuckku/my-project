@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;05.TIMER_DHT11_ULTRASONIC/Core/Inc/ultrasonia.h&apos; to &apos;ultrasonic.h&apos;" description="Rename resource &apos;ultrasonia.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Inc/ultrasonia.h" name="ultrasonic.h" stamp="1697084381777" updateReferences="true"/>
+</session>
