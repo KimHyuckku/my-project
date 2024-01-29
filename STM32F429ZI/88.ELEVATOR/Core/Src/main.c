@@ -88,6 +88,13 @@ const osThreadAttr_t Task2_attributes = {
   .stack_size = 128 * 4,
   .priority = (osPriority_t) osPriorityLow,
 };
+/* Definitions for Task3 */
+osThreadId_t Task3Handle;
+const osThreadAttr_t Task3_attributes = {
+  .name = "Task3",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityLow,
+};
 /* Definitions for myMutex01 */
 osMutexId_t myMutex01Handle;
 const osMutexAttr_t myMutex01_attributes = {
@@ -119,6 +126,7 @@ static void MX_ETH_Init(void);
 void StartDefaultTask(void *argument);
 void Task1_func(void *argument);
 void Task2_func(void *argument);
+void Task3_func(void *argument);
 
 /* USER CODE BEGIN PFP */
 extern void led_main(void);
@@ -340,6 +348,9 @@ int main(void)
   /* creation of Task2 */
   Task2Handle = osThreadNew(Task2_func, NULL, &Task2_attributes);
 
+  /* creation of Task3 */
+  Task3Handle = osThreadNew(Task3_func, NULL, &Task3_attributes);
+
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
   /* USER CODE END RTOS_THREADS */
@@ -355,16 +366,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  /*printf("cds sensor : %d \n", adcValue[0]);
-	  if(adcValue[0] < 2500)
-	  {
-		  HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0);
-	  }
-	  else
-	  {
-		  HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_7);
-	  }
-	  HAL_Delay(1000);*/
+
 
 //	DHT11_processing();
 // 	pc_command_processing();
@@ -1207,6 +1209,34 @@ void Task2_func(void *argument)
 	  osDelay(1);
   }
   /* USER CODE END Task2_func */
+}
+
+/* USER CODE BEGIN Header_Task3_func */
+/**
+* @brief Function implementing the Task3 thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_Task3_func */
+void Task3_func(void *argument)
+{
+  /* USER CODE BEGIN Task3_func */
+  /* Infinite loop */
+  for(;;)
+  {
+	  if(adcValue[0] < 2500)
+	  {
+		  dir = 0;
+	  }
+	  /*printf("cds sensor : %d \n", adcValue[0]);
+	  else
+	  {
+		  HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_7);
+	  }*/
+
+    osDelay(1000);
+  }
+  /* USER CODE END Task3_func */
 }
 
 /**

@@ -297,7 +297,6 @@ int dotmatrix_main_up(void)
 		HAL_Delay(1);
 	}
 }
-
 #else
 
 // 고정 문자 출력 demo program
@@ -407,6 +406,4 @@ int dotmatrix_main_stop(void)
 
 		HAL_Delay(1);
 	}
-
 }
-
