@@ -5,7 +5,7 @@ https://www.st.com/en/development-tools/stm32cubeide.html#get-software
 STM32 Cube Ide을 windows용으로 다운로드한다
 경로 설정을 모두 한 뒤, File-New-STM32 Project를 누른다
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/40d09a6e-2179-4000-9513-0a72fa3706de/0267e216-8fad-4657-a86d-3ab42db66643/Untitled.png)
+!(https://prod-files-secure.s3.us-west-2.amazonaws.com/40d09a6e-2179-4000-9513-0a72fa3706de/0267e216-8fad-4657-a86d-3ab42db66643/Untitled.png)
 Board Selector에서 나와 맞는 보드를 고른다.
 
 Board Selector에서 나와 맞는 보드를 고른다.
