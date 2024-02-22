@@ -4,6 +4,7 @@
 
 
 
-## 
+## 상태 천이도
 
+![image](https://github.com/KimHyuckku/my-project/assets/148949177/6e261514-636b-4c5f-b0d5-13ffb10254dd)
 
