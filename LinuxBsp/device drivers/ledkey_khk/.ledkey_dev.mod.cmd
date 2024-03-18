@@ -1,0 +1,1 @@
+cmd_/home/ubuntu/pi_bsp/drivers/ledkey_khk/ledkey_dev.mod := printf '%s\n'   ledkey_dev.o | awk '!x[$$0]++ { print("/home/ubuntu/pi_bsp/drivers/ledkey_khk/"$$0) }' > /home/ubuntu/pi_bsp/drivers/ledkey_khk/ledkey_dev.mod
